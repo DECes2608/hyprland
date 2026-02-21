@@ -8,8 +8,7 @@ Ekran görüntüsü aracı= grimblast
 Pano= copyq
 
 ## Açıklama
-hyperland confiğim çok kusursuz olmamakla beraber oluşacak sorumlardan beni sorumlu tutmatın isteyen değiştirip kullanabilir
-
+Açıkça belirttiğim gibi bu benim hyperland confiğim isterseniz direkt alın yada değiştirip kullanın lütfen sorunlarınız olursa ilk bana sormayın çünkü çok yardımcı olabileceğimi sanmıyorum, güle güle kullanın :)
 ## Nvidia...
 Nvidia ile ilgili kısmı nvidia kart kullanmıyorsanız silin kullanıyorsanız ise isterseniz değiştirin veya kendinize göre düzeltin yada boşverin
 
