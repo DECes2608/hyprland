@@ -1,0 +1,2 @@
+# hypercf
+my hyperland config
