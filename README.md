@@ -1,5 +1,4 @@
-# hypercf
-Hyperland confiğim
+# Hyprland config
 
 ## Varsayılanlar
 Tarayıcı= helium
