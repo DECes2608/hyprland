@@ -1,0 +1,17 @@
+font_family      Hack
+font_size        11.0
+
+scrollbar never
+
+background           #000000 
+background_opacity    0.8
+dynamic_background_opacity yes
+
+foreground            #ffffff
+cursor                #c64ef2
+
+window_padding_width  10
+
+confirm_os_window_close 0
+
+background_blur 1
