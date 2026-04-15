@@ -19,7 +19,7 @@
 İstediğinizi sorun elimden geldiğince yardım ederim
 
 ### Açıklama config
-source = ~/.config/hypr/configs/env.conf = env komutları
+source = ~/.config/hypr/configs/env.conf = env komutları \n
 source = ~/.config/hypr/configs/startup.conf =başlangıç uygulamaları
 source = ~/.config/hypr/configs/m&i.conf = giriş aygıtı ayarı ve monütor ayarı
 source = ~/.config/hypr/configs/look.conf = görüntü için efektler animasyonlar vsr
