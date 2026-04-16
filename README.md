@@ -52,5 +52,6 @@ Nvidia ile ilgili kısmı nvidia kart kullanmıyorsanız silin kullanıyorsanız
 
 ## Görünüm
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3f9ae6be-a25c-4acc-b859-884f0e94eb25" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/41ee96d0-c617-4e85-8832-8c0074fcc51c" />
+
 
