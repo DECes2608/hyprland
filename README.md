@@ -3,26 +3,28 @@
 ## Temalar
 
 -Gtk = Graphite-Dark-Compact
--
+--
 -qt = darker
--
+--
 -noctalia = monochrome
--
+--
 -yazı tibi = FantasqueSansM Nerd Font Mono
--
+--
+
+---
 
 ## Varsayılanlar
 
 -Tarayıcı = helium
--
+--
 -Terminal = kitty
--
+--
 -Ekran görüntüsü aracı = grim slurp
--
+--
 -Pano = copyq
--
+--
 -Editör = zed
--
+--
 
 ## Açıklama
 
