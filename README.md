@@ -15,7 +15,7 @@
 
 ## Varsayılanlar
 
--Tarayıcı = helium
+-Tarayıcı = zen
 --
 -Terminal = kitty
 --
@@ -25,6 +25,11 @@
 --
 -Editör = zed
 --
+-Bildirim = dunst
+--
+-Bar = waybar (isteğe bağlı noctalia)
+--
+
 
 ## Açıklama
 
