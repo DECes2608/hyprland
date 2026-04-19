@@ -1,0 +1,117 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family:
+        FantasqueSansM Nerd Font Mono,
+        monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0); /* Tamamen şeffaf bar arka planı */
+    color: #ffffff;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #454545; /* İnaktif workspace rengi (Koyu Gri) */
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #ffffff; /* Aktif workspace metin rengi */
+}
+
+#workspaces button.focused {
+    color: #000000; /* Odaklanılan workspace metin rengi */
+    background: #ffffff; /* Odaklanılan workspace arka planı (Beyaz) */
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #000000;
+    background: #888888; /* Acil durum uyarısı (Orta Gri) */
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #333333; /* Üzerine gelince koyu gri */
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#workspaces,
+#tray,
+#backlight {
+    background: #111111; /* Modül arka planları (Çok koyu gri/Siyah) */
+    color: #eeeeee; /* Modül metin renkleri */
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 5px;
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: #111111;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#cpu {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#memory {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: #ffffff;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+#network {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#pulseaudio {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 5px;
+}
+
+#battery {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
