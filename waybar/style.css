@@ -1,117 +1,95 @@
 * {
     border: none;
     border-radius: 0;
-    font-family:
-        FantasqueSansM Nerd Font Mono,
-        monospace;
+    font-family: "FantasqueSansM Nerd Font Mono", monospace;
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0); /* Tamamen şeffaf bar arka planı */
-    color: #ffffff;
+    background: transparent;
+    color: #eeeeee;
+}
+
+/* ── Sol ── */
+#workspaces {
+    background: #111111;
+    border-radius: 16px;
+    margin: 5px 4px 5px 12px;
+    padding: 0 8px;
 }
 
 #workspaces button {
-    padding: 5px;
-    color: #454545; /* İnaktif workspace rengi (Koyu Gri) */
-    margin-right: 5px;
+    color: #888888;
+    padding: 0 6px;
+    background: transparent;
 }
 
 #workspaces button.active {
-    color: #ffffff; /* Aktif workspace metin rengi */
-}
-
-#workspaces button.focused {
-    color: #000000; /* Odaklanılan workspace metin rengi */
-    background: #ffffff; /* Odaklanılan workspace arka planı (Beyaz) */
-    border-radius: 10px;
-}
-
-#workspaces button.urgent {
-    color: #000000;
-    background: #888888; /* Acil durum uyarısı (Orta Gri) */
-    border-radius: 10px;
+    color: #5eaeff;
 }
 
 #workspaces button:hover {
-    background: #333333; /* Üzerine gelince koyu gri */
+    background: transparent;
     color: #ffffff;
-    border-radius: 10px;
-}
-
-#window,
-#clock,
-#battery,
-#pulseaudio,
-#network,
-#cpu,
-#memory,
-#workspaces,
-#tray,
-#backlight {
-    background: #111111; /* Modül arka planları (Çok koyu gri/Siyah) */
-    color: #eeeeee; /* Modül metin renkleri */
-    padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 5px;
-}
-
-#backlight {
-    border-radius: 10px 0px 0px 10px;
-}
-
-#tray {
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-#workspaces {
-    background: #111111;
-    border-radius: 10px;
-    margin-left: 10px;
-    padding-right: 0px;
-    padding-left: 5px;
-}
-
-#cpu {
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
-}
-
-#memory {
-    border-radius: 10px 0px 0px 10px;
 }
 
 #window {
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+    background: #111111;
+    color: #5eaeff;
+    border-radius: 16px;
+    margin: 5px 4px;
+    padding: 0 14px;
 }
 
+/* ── Orta ── */
 #clock {
-    color: #ffffff;
-    border-radius: 10px;
-    margin-left: 5px;
+    background: #111111;
+    color: #eeeeee;
+    border-radius: 16px;
+    margin: 5px 4px;
+    padding: 0 16px;
+}
+
+/* ── Sağ ── */
+#cpu {
+    background: #111111;
+    color: #eeeeee;
+    border-radius: 16px 0 0 16px;
+    margin: 5px 0 5px 4px;
+    padding: 0 12px;
+}
+
+#memory {
+    background: #111111;
+    color: #eeeeee;
+    margin: 5px 0;
+    padding: 0 12px;
 }
 
 #network {
-    border-radius: 10px 0px 0px 10px;
+    background: #111111;
+    color: #eeeeee;
+    margin: 5px 0;
+    padding: 0 12px;
 }
 
 #pulseaudio {
-    border-left: 0px;
-    border-right: 0px;
+    background: #111111;
+    color: #eeeeee;
+    border-radius: 0 16px 16px 0;
+    margin: 5px 0;
+    padding: 0 12px;
 }
 
-#pulseaudio.microphone {
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 5px;
+#pulseaudio.muted {
+    color: #555555;
 }
 
-#battery {
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
+#tray {
+    background: #111111;
+    border-radius: 16px;
+    margin: 5px 12px 5px 4px;
+    padding: 0 12px;
 }

@@ -1,49 +1,57 @@
 * {
     bg: #000000;
-    cur: #ffffff10;
+    cur: #ffffff15;
     fg: #ffffff;
-    border-radius: 8px; [span_6](start_span)/* Daha keskin/küçük köşeler */[span_6](end_span)
+    fg-alt: #ffffff50;
+    border-radius: 10px;
     background-color: transparent;
-    [span_7](start_span)text-color: @fg;[span_7](end_span)
-    font: "JetBrains Mono Nerd Font 10"; [span_8](start_span)/* Fontu bir tık küçülttük */[span_8](end_span)
+    text-color: @fg;
+    font: "FantasqueSansM Nerd Font Mono 11";
 }
 
 window {
     location: center;
     anchor: center;
-    width: 250px; /* Genişliği daralttık */
-    [span_9](start_span)background-color: @bg;[span_9](end_span)
-    border: 1px; [span_10](start_span)/* Çerçeveyi incelttik */[span_10](end_span)
+    width: 320px;
+    background-color: @bg;
+    border: 1px;
     border-color: #ffffff20;
-    padding: 10px; [span_11](start_span)/* İç boşluğu azalttık */[span_11](end_span)
+    padding: 16px;
 }
 
 inputbar {
-    spacing: 0px; 
-    padding: 4px;
+    spacing: 0px;
+    padding: 10px 12px;
     background-color: @cur;
-    [span_12](start_span)children: [ prompt, entry ];[span_12](end_span)
+    border-radius: 8px;
+    /* prompt öğesini sildik, sadece giriş alanı kaldı */
+    children: [ entry ];
+}
+
+entry {
+    placeholder: "Ara...";
+    placeholder-color: @fg-alt;
+    text-color: @fg;
 }
 
 listview {
-    lines: 4; [span_13](start_span)/* Tam istediğin gibi 4 uygulama görünür */[span_13](end_span)
-    [span_14](start_span)columns: 1;[span_14](end_span)
+    lines: 5;
+    columns: 1;
     fixed-height: true;
-    margin: 5px 0 0;
+    margin: 14px 0 0;
 }
 
 element {
-    padding: 5px; /* Daha kompakt görünüm */
-    border-radius: 4px;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
 
 element selected {
     background-color: #ffffff20;
 }
 
-/* İkonları tamamen devre dışı bıraktık */
 element-icon {
-    [span_15](start_span)enabled: false;[span_15](end_span)
+    enabled: false;
 }
 
 element-text {

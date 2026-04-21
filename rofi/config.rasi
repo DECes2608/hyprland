@@ -1,6 +1,6 @@
 configuration {
     show-icons: false;
-    font: "JetBrains Mono Nerd Font 11";
+    font: "FantasqueSansM Nerd Font Mono 11";
 }
 
 @theme "~/.config/rofi/themes/modern-black.rasi"
