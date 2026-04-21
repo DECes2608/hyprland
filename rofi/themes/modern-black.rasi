@@ -2,51 +2,50 @@
     bg: #000000;
     cur: #ffffff10;
     fg: #ffffff;
-    border-radius: 12px;
+    border-radius: 8px; [span_6](start_span)/* Daha keskin/küçük köşeler */[span_6](end_span)
     background-color: transparent;
-    text-color: @fg;
-    font: "JetBrains Mono Nerd Font 11";
+    [span_7](start_span)text-color: @fg;[span_7](end_span)
+    font: "JetBrains Mono Nerd Font 10"; [span_8](start_span)/* Fontu bir tık küçülttük */[span_8](end_span)
 }
 
 window {
     location: center;
     anchor: center;
-    width: 400px;
-    background-color: @bg;
-    border: 2px;
+    width: 250px; /* Genişliği daralttık */
+    [span_9](start_span)background-color: @bg;[span_9](end_span)
+    border: 1px; [span_10](start_span)/* Çerçeveyi incelttik */[span_10](end_span)
     border-color: #ffffff20;
-    padding: 20px;
+    padding: 10px; [span_11](start_span)/* İç boşluğu azalttık */[span_11](end_span)
 }
 
 inputbar {
-    spacing: 8px; 
-    padding: 8px;
+    spacing: 0px; 
+    padding: 4px;
     background-color: @cur;
-    border-radius: 8px;
-    children: [ prompt, entry ];
-}
-
-prompt {
-    text-color: #ffffff60;
+    [span_12](start_span)children: [ prompt, entry ];[span_12](end_span)
 }
 
 listview {
-    lines: 8;
-    columns: 1;
-    fixed-height: false;
-    margin: 10px 0 0;
+    lines: 4; [span_13](start_span)/* Tam istediğin gibi 4 uygulama görünür */[span_13](end_span)
+    [span_14](start_span)columns: 1;[span_14](end_span)
+    fixed-height: true;
+    margin: 5px 0 0;
 }
 
 element {
-    padding: 8px;
-    border-radius: 8px;
+    padding: 5px; /* Daha kompakt görünüm */
+    border-radius: 4px;
 }
 
 element selected {
     background-color: #ffffff20;
 }
 
+/* İkonları tamamen devre dışı bıraktık */
 element-icon {
-    size: 24px;
-    padding: 0 10px 0 0;
+    [span_15](start_span)enabled: false;[span_15](end_span)
+}
+
+element-text {
+    vertical-align: 0.5;
 }
