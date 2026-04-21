@@ -1,3 +1,9 @@
+/* --- Tema Renkleri --- */
+@define-color base   rgba(17, 17, 17, 0.75); /* Duvar kağıdını göstermesi için hafif şeffaf arka plan */
+@define-color text   #eeeeee;
+@define-color accent #cba6f7; /* Çoğu duvar kağıdına uyan yumuşak bir vurgu rengi. Kendi temana göre değiştirebilirsin. */
+@define-color hover  #ffffff;
+
 * {
     border: none;
     border-radius: 0;
@@ -9,12 +15,12 @@
 
 window#waybar {
     background: transparent;
-    color: #eeeeee;
+    color: @text;
 }
 
 /* ── Sol ── */
 #workspaces {
-    background: #111111;
+    background: @base;
     border-radius: 16px;
     margin: 5px 4px 5px 12px;
     padding: 0 8px;
@@ -24,20 +30,22 @@ window#waybar {
     color: #888888;
     padding: 0 6px;
     background: transparent;
+    transition: all 0.3s ease;
 }
 
 #workspaces button.active {
-    color: #5eaeff;
+    color: @accent;
 }
 
 #workspaces button:hover {
     background: transparent;
-    color: #ffffff;
+    color: @hover;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 #window {
-    background: #111111;
-    color: #5eaeff;
+    background: @base;
+    color: @accent;
     border-radius: 16px;
     margin: 5px 4px;
     padding: 0 14px;
@@ -45,8 +53,8 @@ window#waybar {
 
 /* ── Orta ── */
 #clock {
-    background: #111111;
-    color: #eeeeee;
+    background: @base;
+    color: @text;
     border-radius: 16px;
     margin: 5px 4px;
     padding: 0 16px;
@@ -54,30 +62,30 @@ window#waybar {
 
 /* ── Sağ ── */
 #cpu {
-    background: #111111;
-    color: #eeeeee;
+    background: @base;
+    color: @text;
     border-radius: 16px 0 0 16px;
     margin: 5px 0 5px 4px;
     padding: 0 12px;
 }
 
 #memory {
-    background: #111111;
-    color: #eeeeee;
+    background: @base;
+    color: @text;
     margin: 5px 0;
     padding: 0 12px;
 }
 
 #network {
-    background: #111111;
-    color: #eeeeee;
+    background: @base;
+    color: @text;
     margin: 5px 0;
     padding: 0 12px;
 }
 
 #pulseaudio {
-    background: #111111;
-    color: #eeeeee;
+    background: @base;
+    color: @text;
     border-radius: 0 16px 16px 0;
     margin: 5px 0;
     padding: 0 12px;
@@ -88,7 +96,7 @@ window#waybar {
 }
 
 #tray {
-    background: #111111;
+    background: @base;
     border-radius: 16px;
     margin: 5px 12px 5px 4px;
     padding: 0 12px;
