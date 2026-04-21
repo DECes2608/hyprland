@@ -1,6 +1,5 @@
 configuration {
     show-icons: true;
-    icon-theme: "Papirus-Dark"; /* Varsa bu ikon setini kullanır */
     font: "JetBrains Mono Nerd Font 11";
 }
 
