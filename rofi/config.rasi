@@ -4,16 +4,3 @@ configuration {
 }
 
 @theme "~/.config/rofi/themes/modern-black.rasi"
-
-
-window {
-    background-color: rgba(0, 0, 0, 0.0);
-    border: 0px;
-    border-color: #000000; 
-    border-radius: 0px;
-}
-
-mainbox {
-    background-color: #000000;
-
-}
