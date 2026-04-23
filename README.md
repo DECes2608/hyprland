@@ -1,83 +1,85 @@
-# Hyprland config
+# Hyprland Config
 
-----
+---
 
 ## Temalar
-
--noctalia = ayu
-
--yazı tibi = FantasqueSansM Nerd Font Mono
+- Noctalia = Ayu
+- Yazı tipi = FantasqueSansM Nerd Font Mono
 
 ---
 
 ## Varsayılanlar
-
--Tarayıcı = librewolf
-
--Terminal = kitty
-
--Ekran görüntüsü aracı = grim slurp
-
--Pano = copyq
-
--Editör = zed
-
--Yardımcı editör = code
-
--Bildirim = dunst (noctalia kurarsanız gerek yok)
-
--Bar = waybar (isteğe bağlı noctalia)
+- Tarayıcı = LibreWolf
+- Terminal = Kitty
+- Ekran görüntüsü aracı = grim + slurp
+- Pano = CopyQ
+- Editör = Zed
+- Yardımcı editör = VSCode
+- Bildirim = Dunst (Noctalia kurarsanız gerek yok)
+- Bar = Waybar (isteğe bağlı, Noctalia ile gelir)
 
 ---
 
-# GEREKLİ UYGULAMALAR
+## Gereksinimler
 
+> **Hyprland v0.54.3 veya üzeri gereklidir.** Eski sürümlerde blok tabanlı sözdizimi çalışmaz.
 
+### Gerekli uygulamalar
 ```bash
 sudo pacman -S hyprshade hyprcursor hyprpaper rofi-wayland xwayland-satellite nautilus kitty xdg-desktop-portal-hyprland xdg-desktop-portal blueman
 ```
 
---
-
-## İsteğe bağlı
-
-
+### İsteğe bağlı
 ```bash
 sudo pacman -S zed code obsidian evince
-
 yay -S librewolf-bin spotify-launcher noctalia-shell
 ```
 
+---
+
+## Kurulum
+
+1. Repoyu klonlayın:
+```bash
+mkdir ~/hyrplandcf
+git clone https://github.com/DECes2608/hyprland ~/hyprlandcf
+```
+burada hyprlandcf adında klasör oluşturup oun içine klonlama yaptırtıyorum çünkü ekstra readme gidi dosyalar .config klasöründe kötü olurdu
+
+2. Gerekli uygulamaları kurun (yukarıdaki komutlar)
+
+3. Hyprland'ı yeniden başlatın
 
 ---
 
-## Açıklama
+## Config Dosyaları
 
-İstediğinizi sorun elimden geldiğince yardım ederim
+| Dosya | Açıklama |
+|---|---|
+| `env.conf` | Ortam değişkenleri |
+| `startup.conf` | Başlangıçta çalışacak uygulamalar |
+| `m&i.conf` | Monitör ve giriş aygıtı ayarları |
+| `look.conf` | Görsel efektler ve animasyonlar |
+| `rules.conf` | Pencere kuralları |
+| `basekeys.conf` | Temel kısayollar (ses, parlaklık vb.) |
+| `keybinds.conf` | Uygulama kısayolları |
 
---
-
-### Açıklama config
-
-source = ~/.config/hypr/configs/env.conf = env komutları
-
-source = ~/.config/hypr/configs/startup.conf =başlangıç uygulamaları
-
-source = ~/.config/hypr/configs/m&i.conf = giriş aygıtı ayarı ve monütor ayarı
-
-source = ~/.config/hypr/configs/look.conf = görüntü için efektler animasyonlar vsr
-
-source = ~/.config/hypr/configs/rules.conf = pencere kuralları (hyprctl clients komutu ile uygulama class ismine bakıp değişebilir)
-
-source = ~/.config/hypr/configs/basekeys.conf = basit kısayollar ses parlaklık vsr
-
-source = ~/.config/hypr/configs/keybinds.conf = atanmış uygulama kısayolları
+> Pencere kurallarını düzenlemek için uygulama class ismini öğrenmek üzere `hyprctl clients` komutunu kullanabilirsiniz.
 
 ---
 
-## Nvidia...
+## Hyprshade (Doygunluk Shader)
 
-Nvidia ile ilgili kısmı nvidia kart kullanmıyorsanız silin kullanıyorsanız ise isterseniz değiştirin veya kendinize göre düzeltin yada boşverin
+Shader dosyası şu konuma yerleştirilmelidir:
+```
+~/.config/hypr/shaders/saturation.glsl
+```
+
+---
+
+## Nvidia
+
+Nvidia kartı olmayanlar `env.conf` içindeki Nvidia ile ilgili satırları silebilir. Nvidia kullanıcıları kendi sistemlerine göre düzenleyebilir.
 
 ---
 
@@ -85,5 +87,8 @@ Nvidia ile ilgili kısmı nvidia kart kullanmıyorsanız silin kullanıyorsanız
 
 <img width="1918" height="1080" alt="image" src="https://github.com/user-attachments/assets/a41aea81-f21e-4b8e-b44a-9df06a6e5fa5" />
 
+---
 
+## Sorularınız için
 
+İstediğinizi sorun, elimden geldiğince yardımcı olurum.
