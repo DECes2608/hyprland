@@ -32,15 +32,22 @@
 
 # GEREKLİ UYGULAMALAR
 
-** sudo pacman -S hyprshade hyprcursor hyprpaper rofi-wayland xwayland-satellite nautilus kitty xdg-desktop-portal-hyprland xdg-desktop-portal blueman **
+
+```bash
+sudo pacman -S hyprshade hyprcursor hyprpaper rofi-wayland xwayland-satellite nautilus kitty xdg-desktop-portal-hyprland xdg-desktop-portal blueman
+```
 
 --
 
 ## İsteğe bağlı
 
-** sudo pacman -S zed code obsidian evince **
 
-** yay -S librewolf-bin spotify-launcher noctalia-shell **
+```bash
+sudo pacman -S zed code obsidian evince
+
+yay -S librewolf-bin spotify-launcher noctalia-shell
+```
+
 
 ---
 
