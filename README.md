@@ -1,7 +1,6 @@
 # Hyprland config
 
---
---
+----
 
 ## Temalar
 
@@ -9,8 +8,7 @@
 
 -yazı tibi = FantasqueSansM Nerd Font Mono
 
---
---
+---
 
 ## Varsayılanlar
 
@@ -30,8 +28,7 @@
 
 -Bar = waybar (isteğe bağlı noctalia)
 
---
---
+---
 
 # GEREKLİ UYGULAMALAR
 
@@ -45,12 +42,13 @@
 
 ** yay -S librewolf-bin spotify-launcher noctalia-shell **
 
---
---
+---
 
 ## Açıklama
 
 İstediğinizi sorun elimden geldiğince yardım ederim
+
+--
 
 ### Açıklama config
 
@@ -68,9 +66,13 @@ source = ~/.config/hypr/configs/basekeys.conf = basit kısayollar ses parlaklık
 
 source = ~/.config/hypr/configs/keybinds.conf = atanmış uygulama kısayolları
 
+---
+
 ## Nvidia...
 
 Nvidia ile ilgili kısmı nvidia kart kullanmıyorsanız silin kullanıyorsanız ise isterseniz değiştirin veya kendinize göre düzeltin yada boşverin
+
+---
 
 ## Görünüm
 
