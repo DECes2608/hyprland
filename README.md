@@ -1,35 +1,52 @@
 # Hyprland config
 
+--
+--
+
 ## Temalar
 
--Gtk = Orchis dark compact
---
--qt = darker
---
--noctalia = monochrome
---
--yazı tibi = FantasqueSansM Nerd Font Mono
---
+-noctalia = ayu
 
----
+-yazı tibi = FantasqueSansM Nerd Font Mono
+
+--
+--
 
 ## Varsayılanlar
 
 -Tarayıcı = librewolf
---
+
 -Terminal = kitty
---
+
 -Ekran görüntüsü aracı = grim slurp
---
+
 -Pano = copyq
---
+
 -Editör = zed
---
--Bildirim = dunst
---
+
+-Yardımcı editör = code
+
+-Bildirim = dunst (noctalia kurarsanız gerek yok)
+
 -Bar = waybar (isteğe bağlı noctalia)
+
+--
 --
 
+# GEREKLİ UYGULAMALAR
+
+** sudo pacman -S hyprshade hyprcursor hyprpaper rofi-wayland xwayland-satellite nautilus kitty xdg-desktop-portal-hyprland xdg-desktop-portal blueman **
+
+--
+
+## İsteğe bağlı
+
+** sudo pacman -S zed code obsidian evince **
+
+** yay -S librewolf-bin spotify-launcher noctalia-shell **
+
+--
+--
 
 ## Açıklama
 
@@ -57,6 +74,7 @@ Nvidia ile ilgili kısmı nvidia kart kullanmıyorsanız silin kullanıyorsanız
 
 ## Görünüm
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/262188af-710d-43c9-af33-1c876a28bf55" />
+<img width="1918" height="1080" alt="image" src="https://github.com/user-attachments/assets/a41aea81-f21e-4b8e-b44a-9df06a6e5fa5" />
+
 
 
