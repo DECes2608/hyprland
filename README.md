@@ -85,7 +85,8 @@ Nvidia kartı olmayanlar `env.conf` içindeki Nvidia ile ilgili satırları sile
 
 ## Görünüm
 
-<img width="1918" height="1080" alt="image" src="https://github.com/user-attachments/assets/a41aea81-f21e-4b8e-b44a-9df06a6e5fa5" />
+<img width="1915" height="1071" alt="image" src="https://github.com/user-attachments/assets/eea0c699-08d1-4ba1-a730-872d692eedd2" />
+
 
 ---
 
