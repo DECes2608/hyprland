@@ -1,28 +1,20 @@
-//   _____ _____ _____ _____ _____ _____ _____ _____ _____
-//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
-//  |   __|     |__   | | | |   __|   __| | | |   --|     |
-//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  HYPRLAND
-//
-//  by Bina
-
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "~/.config/fastfetch/ascii/arch.txt",
-    "type": "kitty",
-    "width": 50,
-    "height": 24,
+    "source": "/home/deces/.config/fastfetch/ascii/arch.txt",
+    "width": 15,
+    "height": 20,
     "padding": {
-      "top": 2,
+      "top": 4,
     },
   },
   "display": {
-    "separator": " ",
+    "separator": "  ",
   },
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m",
+      "format": "\u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m",
     },
     "break",
     {
@@ -33,89 +25,60 @@
     {
       "type": "os",
       "key": " ",
-      "keyColor": "34", // = color4
+      "keyColor": "37",
     },
     {
       "type": "kernel",
       "key": " ",
-      "keyColor": "34",
+      "keyColor": "37",
     },
     {
       "type": "packages",
       "format": "{} (pacman)",
       "key": " ",
-      "keyColor": "34",
+      "keyColor": "37",
     },
     {
       "type": "shell",
       "key": " ",
-      "keyColor": "34",
+      "keyColor": "37",
     },
     {
       "type": "terminal",
       "key": " ",
-      "keyColor": "34",
+      "keyColor": "37",
     },
     {
       "type": "wm",
       "key": " ",
-      "keyColor": "34",
-    },
-    {
-      "type": "display",
-      "key": " ",
-      "keyColor": "34",
+      "keyColor": "37",
     },
     {
       "type": "cpu",
       "format": "{1}",
       "key": " ",
-      "keyColor": "34",
+      "keyColor": "37",
     },
     {
       "type": "gpu",
       "format": "{2}",
       "key": " ",
-      "keyColor": "34",
-    },
-    {
-      "type": "gpu",
-      "format": "{3}",
-      "key": " ",
-      "keyColor": "34",
+      "keyColor": "37",
     },
     {
       "type": "memory",
       "key": "󰍛 ",
-      "keyColor": "34",
-    },
-    {
-      "type": "swap",
-      "key": "󰾴 ",
-      "keyColor": "34",
-    },
-    {
-      "type": "disk",
-      "key": " ",
-      "keyColor": "34",
+      "keyColor": "37",
     },
     {
       "type": "uptime",
       "key": " ",
-      "keyColor": "34",
-    },
-    {
-      "type": "command",
-      "key": "󱦟 ",
-      "keyColor": "34",
-      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
+      "keyColor": "37",
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m",
+      "format": "\u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m",
     },
-    "break",
-    "break",
   ],
 }
